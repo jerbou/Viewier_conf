@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>deci</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>gip-territoires-numeriques-bfc</dc:publisher>
+<dc:subject>Points d'eau</dc:subject>
+<dc:subject>Contour administratif</dc:subject>
+<dc:date>2020-04-10T15:05:37.444Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="deci"
+    logo=""
+    help="apps/gip-territoires-numeriques-bfc/deci_help.html"
+    style="css/themes/carrot.css"
+    exportpng="false"
+    showhelp="true"
+    coordinates="false"
+    measuretools="true"
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="611023,6009749" zoom="8" />
+<proxy url='https://studiocarto.ternum-bfc.fr/studiocarto/proxy/?url='/>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="" />
+<searchparameters bbox="false" localities="true" features="true" static="false"/>
+<baselayers style="gallery"> 
+    <baselayer visible="false" attribution="&lt;a href='https://www.geoportail.fr/' target='_blank'&gt;&lt;img src='https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'&gt;&lt;/a&gt;" format="image/jpeg" fromcapacity="false" id="bdortho_ign" label="Photo aérienne actuelle" layers="ORTHOIMAGERY.ORTHOPHOTOS" matrixset="PM" maxzoom="22" style="normal" thumbgallery="img/basemap-ideobfc/ortho.png" title="GéoPortail Orthophoto" type="WMTS" url="https://wxs.ign.fr/vojmi5nol05teh15fzyxk7g9/geoportail/wmts"  ></baselayer> 
+    <baselayer visible="false" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" id="osm" label="OpenStreetMap" thumbgallery="img/basemap-ideobfc/osm.png" title="OSM" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png"  ></baselayer> 
+    <baselayer visible="true" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" id="positron" label="Positron" thumbgallery="img/basemap-ideobfc/positron.png" title="CartoDb" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"  ></baselayer> 
+    <baselayer visible="false" attribution="&lt;a href='https://www.geoportail.fr/' target='_blank'&gt;&lt;img src='https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'&gt;&lt;/a&gt;" format="image/jpeg" fromcapacity="false" id="scan_ign" label="Cartes IGN" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" matrixset="PM" maxzoom="22" style="normal" thumbgallery="img/basemap-ideobfc/scan_ign.png" title="GéoPortail Cartes" type="WMTS" url="https://wxs.ign.fr/vojmi5nol05teh15fzyxk7g9/geoportail/wmts"  ></baselayer> 
+    <baselayer visible="false" attribution="Map tiles by  &lt;a href=&quot;https://stamen.com/&quot;&gt;Stamen Design &lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" id="stamen1" label="Toner-lite" maxzoom="20" thumbgallery="img/basemap-ideobfc/toner-lite.png" title="Stamen Design" type="OSM" url="http://{a-d}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png"  ></baselayer> 
+</baselayers>
+<themes mini="true"> 
+    <theme id="theme-20200312173455" name="Points d'eau" collapsed="true" icon="fas fa-fire-extinguisher"> 
+        <layer 
+            id="d_pei_sdis21_d21_p_5933590"
+            name="Point d'eau incendie du SDIS 21"
+            type="wms"
+            url="https://ogc.ternum-bfc.fr/maps/77594?"
+            tiled="true"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://ogc.ternum-bfc.fr/maps/77594?request=GetMetadata&amp;layer=d_pei_sdis21_d21_p_5933590"
+            queryable="true"
+            secure="public"
+            scalemin="50"
+            scalemax="200000"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="sdis39_pei_f33a7b4"
+            name="Point d'eau incendie du SDIS 39"
+            type="wms"
+            url="https://ogc.ternum-bfc.fr/maps/291523?"
+            tiled="true"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://ogc.ternum-bfc.fr/maps/291523?request=GetMetadata&amp;layer=sdis39_pei_f33a7b4"
+            queryable="true"
+            secure="public"
+            scalemax="200000"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="d_sdis_58_pei_bouches_p_r27_60f8273"
+            name="Point d'eau incendie du SDIS 58"
+            type="wms"
+            url="https://ogc.ternum-bfc.fr/maps/77596?"
+            tiled="true"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://ogc.ternum-bfc.fr/maps/77596?request=GetMetadata&amp;layer=d_sdis_58_pei_bouches_p_r27_60f8273"
+            queryable="true"
+            secure="public"
+            scalemax="200000"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="poteaux_bouches_sdis58_4e75314"
+            name="Poteaux et bouches SDIS 58"
+            type="wms"
+            url="https://ogc.ternum-bfc.fr/maps/77596?"
+            tiled="true"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://trouver.ternum-bfc.fr/dataset/points-deau-incendies-du-service-departemental-incendie-et-secours-de-la-nievre-sdis-58"
+            metadata-csw="https://ogc.ternum-bfc.fr/maps/77596?request=GetMetadata&amp;layer=poteaux_bouches_sdis58_4e75314"
+            attribution="SDIS 58"
+            secure="public"
+            scalemax="200000"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+    <theme id="theme-20200312175932" name="Contour administratif" collapsed="true" icon="far fa-map"> 
+        <layer 
+            id="commune_21_dl_2020_5ed545a"
+            name="commune"
+            type="wms"
+            url="https://ogc.ternum-bfc.fr/maps/76966?"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            fields="NOM_COM_M,url_pei,url_erp,url_icpe,url_parc"
+            aliases="NOM_COM_M,,,,"
+            metadata-csw="https://ogc.ternum-bfc.fr/maps/76966?request=GetMetadata&amp;layer=commune_21_dl_2020_5ed545a"
+            queryable="true"
+            secure="public"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+</themes>
+</config>
